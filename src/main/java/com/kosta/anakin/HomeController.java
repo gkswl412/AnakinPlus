@@ -4,6 +4,9 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -34,6 +37,13 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "jsp/home";
+	}
+	
+	@RequestMapping(value = "/search/byArea", method = RequestMethod.POST)
+	public String searchResult(SearchConditionVO scVO, Model model, HttpSession session) {
+		System.out.println(scVO);
+		session.setAttribute("scVO", scVO);
+		return "jsp/searchResult";
 	}
 	
 }

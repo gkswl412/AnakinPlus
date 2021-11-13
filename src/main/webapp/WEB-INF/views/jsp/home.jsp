@@ -19,7 +19,10 @@
 </head>
 <body>
 	<h1>여행갈땐? Anakin!</h1>
-	<select name="sido"></select>
-	<select name="gugun"></select>
+	<form action="search/byArea" method="post">
+		<select name="sido"></select>
+		<select name="gugun"></select>
+		<input type="submit" value="GO">
+	</form>
 </body>
 </html>

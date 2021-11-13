@@ -23,15 +23,12 @@ $(function() {
 		제주도 : ["서귀포시", "제주시", "남제주군", "북제주군"]
 	};
 	
-	
-	
 	//sido select bar 초기화
 	for(var i=0;i<arrSido.length;i++){
 		$("select[name=sido]").append("<option value='" + arrSido[i] + "'>" + arrSido[i] + "</option>");
 	}
 	//gugun select bar 초기화
 	$("select[name=gugun]").append("<option value='구/군 선택'>구/군 선택</option>");
-	
 	
 	
 	//sido <select>태그의 value값이 달라지면(=이용자가 다른지역을 선택할 경우) 감지하여 callback함수를 실행한다
@@ -44,7 +41,7 @@ $(function() {
 			$("select[name=gugun]").append("<option value='" + arrSidoDetail[sido][i] + "'>" 
 			+ arrSidoDetail[sido][i] + "</option>");
 		}
-	}
-	
-	
+	}	
+
+
 });
