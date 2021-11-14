@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.ui-datepicker {
+	font-size: 12px;
+	width: 160px;
+}
+
+.ui-datepicker select.ui-datepicker-month {
+	width: 30%;
+	font-size: 11px;
+}
+
+.ui-datepicker select.ui-datepicker-year {
+	width: 40%;
+	font-size: 11px;
+}
+
+img.ui-datepicker-trigger{
+	width: 23px;
+	height: 23px;
+	vertical-align: middle;
+}
+
+input.date{
+	width: 100px;
+}

@@ -8,7 +8,6 @@
 </head>
 <body>
 	결과
-	${scVO.sido}
-	${scVO.gugun}
+	${scVO}
 </body>
 </html>
