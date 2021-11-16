@@ -1,4 +1,5 @@
-package com.kosta.anakin;
+package com.kosta.anakin.model;
+
 
 public class SearchConditionVO {
 	String sido;
